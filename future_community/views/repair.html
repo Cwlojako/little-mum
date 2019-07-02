@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>一键报修</title>
+    <link rel="shortcut icon" href="../public/favicon.ico">
+
+    <!-- Bootstrap layui core CSS -->
+    <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../public/layui-src/dist/css/layui.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../public/css/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+        <div class="col-sm-12 col-md-12 main">
+          <h2 class="sub-header">报修系统</h2>
+          <div class="site-demo-button" id="layerDemo" style="margin-top: 10px;">
+              <button data-method="detail" class="layui-btn layui-btn-normal">现在报修</button>
+              <button data-method="detail1" class="layui-btn layui-btn-default">查询</button>
+              <button data-method="detail2" class="layui-btn layui-btn-danger">撤销</button>
+          </div>
+          <script src="../public/layui-src/dist/layui.js" charset="utf-8"></script>
+          <script>
+              layui.use('layer', function(){ 
+                var $ = layui.jquery, layer = layui.layer; 
+                var active = {
+                  detail: function(){   
+                    //示范一个公告层
+                    layer.open({
+                      type: 2
+                      ,title: false //不显示标题栏
+                      ,closeBtn: false
+                      ,area: ['800px','500px']
+                      ,shade: 0.8
+                      ,anim:3
+                      ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                      ,btn: ['返回']
+                      ,yes:function(index,layero){
+                        window.location.reload(); 
+                      }
+                      ,btnAlign: 'c'
+                      ,moveType: 0 //拖拽模式，0或者1
+                      ,content: './add.html'
+                    });
+                  },
+                  detail1: function(){   
+                    //示范一个公告层
+                    layer.open({
+                      type: 2
+                      ,title: false //不显示标题栏
+                      ,closeBtn: true
+                      ,area: ['350px','500px']
+                      ,shade: 0.8
+                      ,anim: 4
+                      ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                      ,btnAlign: 'c'
+                      ,moveType: 0 //拖拽模式，0或者1
+                      ,content: './findById.html'
+                    });
+                  },
+                  detail2: function(){   
+                    //示范一个公告层
+                    layer.open({
+                      type: 2
+                      ,title: false //不显示标题栏
+                      ,closeBtn: false
+                      ,area: ['350px','500px']
+                      ,shade: 0.8
+                      ,anim: 4
+                      ,btn: ['返回']
+                      ,yes:function(index,layero){
+                        window.location.reload(); 
+                      }
+                      ,btnAlign: 'c'
+                      ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                      ,btnAlign: 'c'
+                      ,moveType: 0 //拖拽模式，0或者1
+                      ,content: './deleteById.html'
+                    });
+                  },
+                };
+                $('#layerDemo .layui-btn').on('click', function(){
+                  var othis = $(this), method = othis.data('method');
+                  active[method] ? active[method].call(this, othis) : '';
+                }); 
+              });
+          </script>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>业主名字</th>
+                  <th>维修类型</th>
+                  <th>具体详情</th>
+                  <th>地址</th>
+                  <th>门牌号</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{ each repair }}
+                <tr>
+                  <td>{{ $value._id }}</td>
+                  <td>{{ $value.name }}</td>
+                  <td>{{ $value.type }}</td>
+                  <td>{{ $value.detail }}</td>
+                  <td>{{ $value.address }}</td>
+                  <td>{{ $value.houseNumber }}</td>
+                </tr>
+                {{ /each }}
+              </tbody>
+            </table>
+          </div>
+        </div>
+    <div style="position: fixed;bottom: 0;font-weight: bolder;width:100%;height:50px;line-height:50px;padding:0 10px;background: #e7e7e7;">
+      <p style="text-align: right;margin:0;">Copyright © 2019 Cwlojako</p>
+    </div>
+  </body>
+</html>

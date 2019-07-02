@@ -1,0 +1,49 @@
+
+<link rel="stylesheet" href="../../public/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="../../public/layui-src/dist/css/layui.css">
+<div style="text-align: center;margin-top:50px;">
+    <h3>投诉内容</h3>
+</div>
+<section class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <form id="content_form">
+        <input type="hidden" name="avatar" id="avatar" value="{{ user.avatar }}">
+        <div class="form-group">
+          <label for="nickname">昵称</label>
+          <input type="text" class="form-control" id="nickname" placeholder="Email" name="nickname" value="{{ user.nickname }}" >
+        </div>
+        <div class="form-group">
+          <label for="content">内容</label>
+          <textarea class="form-control" rows="5" id="content" name="content"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">发起</button>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="../../public/layui-src/dist/layui.js"></script>
+<script src="../../node_modules/jquery/dist/jquery.js"></script>
+<script>
+    $('#content_form').on('submit', function (e) {
+      e.preventDefault()
+      var formData = $(this).serialize()
+      $.ajax({
+        url: '/topic/new',
+        type: 'post',
+        data: formData,
+        dataType: 'json',
+        success: function (data) {
+          var err_code = data.err_code
+          if(err_code === 0){
+            window.location.href = '/complain.html'
+          }else if(err_code === 500){
+            layui.use('layer', function(){
+              var layer = layui.layer
+              layer.msg('服务器忙，请稍后重试！')
+            })   
+          }
+        }
+      })
+    })
+  </script>

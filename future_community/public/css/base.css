@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?jucfv6');
+  src:  url('../fonts/icomoon.eot?jucfv6#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?jucfv6') format('truetype'),
+    url('../fonts/icomoon.woff?jucfv6') format('woff'),
+    url('../fonts/icomoon.svg?jucfv6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*{margin:0;padding:0;box-sizing: border-box;}
+em,i{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+button{cursor:pointer}
+button,input{font-family:Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif}
+body{height:3000px;-webkit-font-smoothing:antialiased;background-color:#f3f5f7;font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;color:#666}
+.clearfix:after{visibility:hidden;clear:both;display:block;content:".";height:0}
+.clearfix{*zoom:1}
+.w{
+	width:1200px;
+	margin:0 auto;
+}

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>未来智能社区</title>
+    <link rel="shortcut icon" href="../public/favicon.ico">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../public/layui-src/dist/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../public/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/index.css">
+    
+    <script src="../public/jquery/jquery-3.2.1.js"></script>
+    <script src="../public/bootstrap/js/bootstrap.js"></script>
+    <script src="../public/js/common.js"></script> 
+    <script src="../public/js/index.js"></script>
+</head> 
+
+<body>
+
+<!-- 回到顶部开始 -->
+    <a href="#" id="toTop" style="display: none;">
+        <span id="toTopHover" style="opacity: 0;"></span>
+        ToTop
+    </a>
+<!-- 回到顶部结束 -->
+
+<!-- head开始 -->
+    <header> 
+<!-- head-logo开始 -->
+        <div class="logo">
+            <h1>
+                <a href="javascrit:void(0);">智能</a>
+            </h1>
+        </div>
+<!-- head-logo结束 -->
+<!-- head-nav开始 -->
+		<nav>
+            <span id="cloud"></span>
+			<ul class="clearfix" id="navBar">
+				<li><a href="javascrit:void(0);">首页</a></li>
+                <li class="dropdown" id="dropdown">
+                    <a href="javascrit:void(0);">解决方案</a>
+                    <div class="dropdown-layer">
+                        <div class="dropdown-list"><a href="./solution_zhwy.html"target="_blank">智慧物业</a></div>
+                        <div class="dropdown-list"><a href="#">智慧商业</a></div>
+                        <div class="dropdown-list"><a href="#">智慧生活</a></div>
+                        <div class="dropdown-list"><a href="http://www.baidu.com">智慧城市</a></div>
+                    </div>
+                    <i></i>
+                </li>
+                <li class="dropdown" id="dropdown">
+                    <a href="javascrit:void(0);">产品中心</a>
+                    <div class="dropdown-layer">
+                        <div class="dropdown-list dropdown-wlw">
+                            <a href="#">物联网</a>
+                            <div class="right-layer">
+                                <div class="dropdown-list"><a href="./ProductDetails.html" target="_blank">智慧家居</a></div>
+                                <div class="dropdown-list"><a href="#">智慧交通系统</a></div>
+                                <div class="dropdown-list"><a href="#">智慧餐厅</a></div>
+                                <div class="dropdown-list"><a href="#">智慧医疗系统</a></div>
+                                <div class="dropdown-list"><a href="#">社区管理系统</a></div>
+                                <div class="dropdown-list"><a href="#">楼宇对讲系统</a></div>
+                                <div class="dropdown-list"><a href="#">人脸一卡通</a></div>
+                            </div>
+                        </div>
+                        <div class="dropdown-list"><a href="http://w3school.com.cn">物业云</a></div>
+                    </div>
+                    <i></i>
+                </li>
+                <li><a href="javascrit:void(0);">招商合作</a></li>
+                <li><a href="javascrit:void(0);" id="com">社区中心</a></li>
+                <li><a href="javascrit:void(0);">关于我们</a></li>
+			</ul>
+		</nav>
+<!-- head-nav结束 -->
+    </header>
+<!-- head结束 -->
+
+<!-- 轮播图开始 -->
+    <div class="wrap" id="wrap">
+        <div class="slide" id="slide">
+            <ul>
+                <li><a href="#"><img src="../public/img/op1.jpg"></a></li>
+                <li><a href="#"><img src="../public/img/op2.jpg"></a></li>
+                <li><a href="#"><img src="../public/img/op3.jpg"></a></li>
+                <li><a href="#"><img src="../public/img/op4.jpg"></a></li>
+                <li><a href="#"><img src="../public/img/op5.jpg"></a></li>
+            </ul>
+            <div class="arrow" id="arrow">
+              <a href="javascript:;" class="prev" id="arrLeft"></a>
+              <a href="javascript:;" class="next" id="arrRight"></a>
+            </div>
+        </div>
+    </div>
+<!-- 轮播图结束 -->
+
+<!-- 解决方案开始 -->
+    <div class="main-solution">
+        <div class="inner-solution clearfix" id="inner-solution">
+            <ul>
+                <li>
+                    <div class="solution-item">
+                        <div class="hd-img p-img"></div>
+                    </div>
+                    <h4 class="bd-title">物业公司</h4>
+                    <p class="bd-description">
+                        赋能物业公司<br>
+                        帮助传统物业转型升级<br>
+                    </p>
+                    <a href="./solution_zhwy.html" target="_blank"></a>
+                </li>
+                <li>
+                    <div class="solution-item">
+                        <div class="hd-img b-img"></div>
+                    </div>
+                    <h4 class="bd-title">企业商户</h4>
+                    <p class="bd-description">
+                        接驳优质商家服务<br>
+                        精准用户触达<br>
+                    </p>
+                    <a href="http://www.jd.com"></a>
+                </li>
+                <li>
+                    <div class="solution-item">
+                        <div class="hd-img c-img"></div>
+                    </div>
+                    <h4 class="bd-title">家庭住户</h4>
+                    <p class="bd-description">
+                        提供社区增值服务<br>
+                        开启美好生活<br>
+                    </p>
+                    <a href="http://www.taobao.com"></a>
+                </li>
+                <li class="lastone">
+                    <div class="solution-item">
+                        <div class="hd-img g-img"></div>
+                    </div>
+                    <h4 class="bd-title">政府机构</h4>
+                    <p class="bd-description">
+                        帮助公共服务更快触达<br>
+                        共建和谐智慧城市<br>
+                    </p>
+                    <a href="../public/img/background.jpg"></a>
+                </li>             
+            </ul>
+        </div>
+    </div>
+<!-- 解决方案结束 -->
+
+<!-- 过渡层 -->
+    <div class="transit"></div>
+
+<!-- 产品展示开始 -->
+    <div class="main-products">
+        <div class="inner-products">
+            <div class="pro-title">
+                <hr class="line">
+                <div class="hd-title">
+                    <h2>产品 展示</h2>
+                </div>
+                <hr class="line">
+            </div>
+            <ul class="pro-list">
+                <li>
+                    <a href="#">
+                        <div style="background: url(../public/img/wyy.jpg) top center  no-repeat;background-size:cover;">  
+                        </div>
+                        <div class="filter">  
+                                <p>
+                                    用科技的力量帮助物业企业实现数字化转型升级，并为业主提供智能化优质服务。选择物业云等于选择了物业行业的趋势和未来。
+                                </p>
+                        </div>
+                    </a>
+                    <div class="pro-item-content">
+                        <h3>物业云</h3>
+                        <p>智慧物业管理综合解决方案</p>
+                    </div>
+                </li> 
+                <li>
+                    <a href="./ProductDetails.html" target="_blank">
+                        <div style="background: url(../public/img/znjj.jpg) top center no-repeat;background-size:cover;">  
+                        </div>
+                        <div class="filter">
+                            <p>
+                                智能家居主要分为生活助理类、影音娱乐类、自动化控制类、通信信息类和电商购物类五大类业务。
+                            </p>
+                        </div>
+                    </a>
+                    <div class="pro-item-content">
+                        <h3>智能家居</h3>
+                        <p>享受智能温馨之家</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div style="background: url(../public/img/sqgl.jpg) top center no-repeat;background-size:cover;">  
+                        </div>
+                        <div class="filter">
+                            <p>    
+                                社区住户可以通过管理系统便捷地享受访客管理、一键报修、物业通知等服务。
+                            </p>
+                        </div>
+                    </a>
+                    <div class="pro-item-content">
+                        <h3>社区管理系统</h3>
+                        <p>享受社区管理之便</p>
+                    </div>
+                </li>
+                <li class="pro-item-last">
+                    <a href="#">
+                        <div style="background: url(../public/img/lydj.jpg) top center no-repeat;background-size:cover;">  
+                        </div>
+                        <div class="filter">
+                            <p>
+                                以数字可视终端作为节点，实现与家居报警、家居照明系统、家电控制系统的整合，社区住户可以通过物理端、数字终端、APP、小程序等进行长距离的音视频传输。
+                            </p>
+                        </div>
+                    </a>
+                    <div class="pro-item-content">
+                        <h3>楼宇对讲系统</h3>
+                        <p>人未到声先到</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pro-list">
+                <li>
+                    <a href="#">
+                        <div style="background: url(../public/img/rlykt.jpg) top center no-repeat;background-size:cover;">  
+                        </div>
+                        <div class="filter">
+                            <p>
+                                社区住户可以通过人脸识别，便捷使用社区与商圈提供的多样化服务
+                            </p>
+                        </div>
+                    </a>
+                    <div class="pro-item-content">
+                        <h3>人脸一卡通</h3>
+                        <p>解放双手输入密码</p>
+                    </div>
+                </li> 
+                <li>
+                    <a href="#">
+                        <div style="background: url(../public/img/zhjt.jpg) top center no-repeat;background-size:cover;">  
+                        </div>
+                        <div class="filter">
+                            <p>
+                                智慧交通系统由五大部分组成，分别是交通信息服务系统、公共交通系统、车辆控制系统、电子收费系统、紧急救援系统。
+                            </p>
+                        </div>
+                    </a>
+                    <div class="pro-item-content">
+                        <h3>智慧交通系统</h3>
+                        <p>享受快速安全出入</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div style="background: url(../public/img/zhct.jpg) top center no-repeat;background-size:cover;">  
+                        </div>
+                        <div class="filter">
+                            <p>
+                                使用大数据分析，为用户定制个性化的健康饮食方案，享受上门服务。
+                            </p>
+                        </div>
+                    </a>
+                    <div class="pro-item-content">
+                        <h3>智慧餐厅</h3>
+                        <p>健康科学营养方案</p>
+                    </div>
+                </li>
+                <li class="pro-item-last">
+                    <a href="#">
+                        <div style="background: url(../public/img/zhyl.jpg) bottom center no-repeat;background-size:cover;">  
+                        </div>
+                        <div class="filter">
+                            <p>
+                                智慧医疗系统主要是提供一般疾病的基本治疗，慢性病的社区护理，大病向上转诊，接收恢复转诊，还包括自动提示用药时间、服用禁忌、剩余药量等的智能服药系统。
+                            </p>
+                        </div>
+                    </a>
+                    <div class="pro-item-content">
+                        <h3>智慧医疗系统</h3>
+                        <p>您的贴身小护士</p>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </div>
+<!-- 产品展示结束 -->
+
+<!-- 过渡层 -->
+    <div class="transit"></div>
+    
+<!-- 社区中心开始 -->
+    <div class="main-community">
+        <div class="inner-com">
+            <div class="pro-title">
+                <hr class="line">
+                <div class="hd-title">
+                    <h2>社区 中心</h2>
+                </div>
+                <hr class="line">
+            </div>
+
+            {{ each newsDetail }}
+            <div class="com-bd">
+                <div class="com-bd-left">
+                    <div class="com-bd-leftimg" style="background:url({{$value.img}}) no-repeat;background-size: cover;"></div>
+                    <div class="com-bd-leftshow" >
+                        <p id="line{{$index}}">
+                        &nbsp;&nbsp;&nbsp;&nbsp;{{ $value.show }}
+                        </p>
+                    </div>
+                </div>
+                <div class="com-bd-right" id="com-bd-right">
+                    <div class="site-demo-button" id="layerDemo" >
+                        <button data-method="detail" id="{{ $value.id }}" class="layui-btn layui-btn-danger">查看详情</button>
+                    </div>
+                    <div class="site-demo-button" id="layerDemo1">
+                        <button data-method="{{ $value.message }}" class="layui-btn layui-btn-warm">留言评论</button>
+                    </div>
+                </div>
+            </div>
+            {{ /each }}
+            <script src="../public/js/lineEllipsis.js"></script>
+            <script type="text/javascript">
+                //*******************社区中心点击事件开始*******************
+                  var arr2 = []
+                  var boxObjs = document.querySelectorAll('.com-bd-left')
+                  for(var i=0;i<boxObjs.length;i++){
+                    arr2.push(boxObjs[i].children[0])
+                  }
+                  {{each newsDetail}}
+                    arr2[{{$index}}].onclick = function(){
+                      document.getElementById('{{$value.id}}').click()
+                    }
+
+                    $lineEllipsis({
+                        id:"line{{$index}}",
+                        rows:10
+                    })
+                  {{/each}}
+                //*******************社区中心点击事件结束*******************
+                /*字体超出省略号*/
+            </script>
+        </div>
+    </div>
+    <script src="../public/layui-src/dist/layui.js" charset="utf-8"></script>
+    <script>
+    layui.use('layer', function(){ 
+      var $ = layui.jquery, layer = layui.layer; 
+      
+      //触发事件
+      var active = {
+        detail: function(type){
+            var contentStr = ""
+            switch (type[0].id) {
+                {{ each newsDetail}}
+                case '{{ $value.id }}':
+                    contentStr = '{{ $value.htmlurl }}'
+                    break;
+                {{ /each }}
+            }
+          //示范一个公告层
+          layer.open({
+            type: 2
+            ,title: false //不显示标题栏
+            ,closeBtn: false
+            ,area: ['800px','500px']
+            ,shade: 0.8
+            ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+            ,btn: ['返回']
+            ,btnAlign: 'c'
+            ,moveType: 0 //拖拽模式，0或者1
+            ,content: contentStr
+          });
+        },
+
+        message1: function(){
+          //示范一个公告层
+          layer.open({
+            type: 1
+            ,title: false //不显示标题栏
+            ,closeBtn: false
+            ,area: '1200px'
+            ,shade: 0.8
+            ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+            ,btn: ['发表留言', '残忍拒绝']
+            ,btnAlign: 'c'
+            ,moveType: 1 //拖拽模式，0或者1
+            ,content: '<div class="header container"><div class="page-header"><h1>留言页 <small>show your opinions</small></h1></div></div><div class="comments container"><ul class="list-group">{{ each comments }}<li class="list-group-item">{{ $value.name }}说：{{ $value.message }} <span class="pull-right">{{ $value.dataTime }}</span></li>{{/each}}</ul></div>'
+            ,success: function(layero){
+              var btn = layero.find('.layui-layer-btn');
+              btn.find('.layui-layer-btn0').attr({
+                href: '/post'
+                ,target: '_self'
+              });
+            }
+          });
+        },
+        message2: function(){
+          //示范一个公告层
+          layer.open({
+            type: 1
+            ,title: false //不显示标题栏
+            ,closeBtn: false
+            ,area: '1200px'
+            ,shade: 0.8
+            ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+            ,btn: ['发表留言', '残忍拒绝']
+            ,btnAlign: 'c'
+            ,moveType: 1 //拖拽模式，0或者1
+            ,content: '<div class="header container"><div class="page-header"><h1>留言页 <small>show your opinions</small></h1></div></div><div class="comments container"><ul class="list-group">{{each comments1}}<li class="list-group-item">{{ $value.name }}说：{{ $value.message }} <span class="pull-right">{{ $value.dateTime }}</span></li>{{/each}}</ul></div>'
+            ,success: function(layero){
+              var btn = layero.find('.layui-layer-btn');
+              btn.find('.layui-layer-btn0').attr({
+                href: '/post1'
+                ,target: '_self'
+              });
+            }
+          });
+        }
+      };
+      
+      $('#layerDemo .layui-btn').on('click', function(){
+        var othis = $(this), method = othis.data('method');
+        active[method] ? active[method].call(this, othis) : '';
+      }); 
+      $('#layerDemo1 .layui-btn').on('click', function(){
+        var othis = $(this), method = othis.data('method');
+        active[method] ? active[method].call(this, othis) : '';
+      }); 
+    });
+    </script>
+<!-- 社区中心结束 -->
+    
+<!--记数盒开始--> 
+    <div class="counting-box">
+        <div class="row">
+            <div class="col-md-4 col-sm-12"><h2 class="" data-count="663">0</h2><p>座城市</p></div>
+            <div class="col-md-4 col-sm-12"><h2 class="" data-count="150000">0</h2><p>城市社区</p></div>
+            <div class="col-md-4 col-sm-12"><h2 class="" data-count="43000">0</h2><p>万户家庭</p></div>
+        </div>
+    </div>
+<!--记数盒结束--> 
+
+<!-- 联系我们开始 -->
+    <div class="main-contact">
+        <div class="inner-contact">
+            <div class="pro-title contact-title">
+                <hr class="line">
+                <div class="hd-title">
+                    <h2>联系 我们</h2>
+                </div>
+                <hr class="line">
+            </div>
+            <div class="con-bd row">
+                <div class="con-bd-left col-md-5 col-sm-5">&nbsp;&nbsp;&nbsp;&nbsp;尊敬的各位用户，欢迎来了解我们，如果希望了解更多关于我们的解决方案，请您提交右边信息，我们会及时联系您。</div>
+                <div class="con-bd-right col-md-5 col-sm-5">
+                    <form class="layui-form" action="./index.html" method="post">
+                        <div class="layui-form-item">
+                            <div class="layui-input-inline">
+                              <input type="text" name="name" required lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+                            </div>
+                            <div class="layui-input-inline">
+                              <input type="email" name="email" required  lay-verify="required" placeholder="请输入邮箱" autocomplete="off" class="layui-input">
+                            </div> 
+                        </div>
+                   
+                        <div class="layui-form-item">
+                            <div class="layui-input-inline">
+                              <select name="city" lay-verify="required">
+                                <option value="">请选择城市</option>
+                                <option value="0">北京</option>
+                                <option value="1">上海</option>
+                                <option value="2">广州</option>
+                                <option value="3">深圳</option>
+                                <option value="4">杭州</option>
+                              </select>
+                            </div>
+                             <div class="layui-input-inline" style="color:#fff;font-size: 14px;">
+                              <input type="radio" name="sex" value="男" title="男">
+                              <input type="radio" name="sex" value="女" title="女" checked>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-inline"  style="width: 100%;">
+                              <input type="telphone" name="telphone" required lay-verify="required" placeholder="请输入电话号码" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <div class="layui-input-inline"  style="width: 100%;">
+                                <textarea name="desc" placeholder="需求说明" class="layui-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                              <button class="layui-btn" type="submit" lay-submit lay-filter="formDemo">立即提交</button>
+                              <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        layui.use('form', function(){
+          var form = layui.form;     
+          //监听提交
+          form.on('submit(formDemo)', function(data){
+            layer.msg("提交成功:<br/>"+JSON.stringify(data.field));
+          });
+        });
+    </script>
+<!-- 联系我们结束 -->
+
+<!-- 过渡层 -->
+    <div class="transit"></div>
+   
+<!-- 关于我们开始 -->
+    <div class="main-about">
+        <div class="inner-about">
+            <div class="pro-title">
+                <hr class="line">
+                <div class="hd-title">
+                    <h2>关于 我们</h2>
+                </div>
+                <hr class="line">
+            </div>
+            <div class="team">
+                <ul>
+                    <li style="background: url(../public/img/t1.jpg)center center;background-size: cover;">
+                        <div class="team-filter filter-hidden"></div>
+                        <div class="intro intro-hidden">
+                            <p style="font-weight: bolder;">Chen Wei</p>
+                            <p>
+                                <a href="https://github.com/Cwlojako" target="_blank"><i class="i-github"></i></a>
+                                <a href="#"><i class="i-qq"></i></a>
+                                <a href="https://www.weibo.com/1812695063/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank"><i class="i-weibo"></i></a>
+                                <a href="javascript:;" data-method="wechat1"class="wechat"><i class="i-wechat"></i></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li style="background: url(../public/img/t2.jpg) right center;background-size: cover;margin-right: 2000px;" id="team-li2">
+                        <div class="team-filter filter-hidden"></div>
+                        <div class="intro intro-hidden">
+                            <p style="font-weight: bolder;">Luo Wei Feng</p>
+                            <p>
+                                <a href="#" target="_blank"><i class="i-github"></i></a>
+                                <a href="#" target="_blank"><i class="i-qq"></i></a>
+                                <a href="#" target="_blank"><i class="i-weibo"></i></a>
+                                <a href="javascript:;" data-method="wechat2" class="wechat"><i class="i-wechat"></i></a>
+                            </p> 
+                        </div>
+                    </li>
+                    <li style="background: url(../public/img/t3.jpg)center center;background-size: cover;">
+                        <div class="team-filter filter-hidden"></div>
+                        <div class="intro intro-hidden">
+                            <p style="font-weight: bolder;">Lin Yin Yin</p>
+                            <p>
+                                <a href="#" target="_blank"><i class="i-github"></i></a>
+                                <a href="#" target="_blank"><i class="i-qq"></i></a>
+                                <a href="#" target="_blank"><i class="i-weibo"></i></a>
+                                <a href="#"><i class="i-wechat"></i></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li style="background: url(../public/img/t4.jpg)center center;background-size: cover;">
+                        <div class="team-filter filter-hidden"></div>
+                        <div class="intro intro-hidden">
+                            <p style="font-weight: bolder;">Ou Zhi Wei</p>
+                            <p>
+                                <a href="#" target="_blank"><i class="i-github"></i></a>
+                                <a href="#" target="_blank"><i class="i-qq"></i></a>
+                                <a href="#" target="_blank"><i class="i-weibo"></i></a>
+                                <a href="#"><i class="i-wechat"></i></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li style="background: url(../public/img/t5.jpg)center center;background-size: cover;margin-right: 0;">
+                        <div class="team-filter filter-hidden"></div>
+                        <div class="intro intro-hidden">
+                            <p style="font-weight: bolder;">Fang Wei Jun</p>
+                            <p>
+                                <a href="#" target="_blank"><i class="i-github"></i></a>
+                                <a href="#" target="_blank"><i class="i-qq"></i></a>
+                                <a href="#" target="_blank"><i class="i-weibo"></i></a>
+                                <a href="#" target="_blank"><i class="i-wechat"></i></a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <script>
+                    layui.use('layer', function(){ 
+                      var $ = layui.jquery, layer = layui.layer; 
+                      
+                      //触发事件
+                      var active = {
+                        wechat1: function(){
+                          //示范一个公告层
+                          layer.open({
+                            type: 1
+                            ,title: false //不显示标题栏
+                            ,closeBtn: true
+                            ,area: '300px'
+                            ,shade: 0.8
+                            ,anim: 1
+                            ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                            ,btnAlign: 'c'
+                            ,moveType: 1 //拖拽模式，0或者1
+                            ,content: ' <img src="../public/img/wechat1.jpg" style="width:300px;height:400px;">'
+                          });
+                        },
+                        wechat2: function(){
+                          //示范一个公告层
+                          layer.open({
+                            type: 1
+                            ,title: false //不显示标题栏
+                            ,closeBtn: true
+                            ,area: '300px'
+                            ,shade: 0.8
+                            ,anim: 1
+                            ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                            ,btnAlign: 'c'
+                            ,moveType: 1 //拖拽模式，0或者1
+                            ,content: ' <img src="../public/img/wechat2.jpg" style="width:300px;height:400px;">'
+                          });
+                        }
+                      };   
+                      $('.wechat').on('click', function(){
+                        var othis = $(this), method = othis.data('method');
+                        active[method] ? active[method].call(this, othis) : '';
+                      }); 
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+<!-- 关于我们结束 -->
+
+<!-- 底部栏开始 -->
+    <footer>
+        <div class="container">
+            <div class="footer-row row">
+                <div class="col-md-6 footer-row-left">
+                    <h4>Future Community</h4>
+                </div>
+                <div class="col-md-6 footer-row-right">
+                    <form>
+                        <input type="email" name="Email" placeholder="邮箱......" required="">
+                        <input type="submit" value="确认提交">
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="col-sm-4 col-xs-4 footer-grids" style="padding-left: 0;">
+                    <p>该网页系统还有很多没有完善的地方，后期会逐一完善各项功能与子页面。<span  style="color:#337ab7;letter-spacing:1px;">The web system has a lot of not perfect place, the later will be one by one to improve the functions and sub-pages.</span></p>
+                    <h4>地址:<span style="color:#337ab7">广东技术师范大学</span></h4>
+                </div>
+                <div class="col-sm-4 col-xs-4 footer-grids footer-mdl">
+                    <div class="col-md-12 col-xs-12 grid-left">
+                        <ul>
+                            <li><a onclick="method()" style="cursor: pointer;"><i class="fa fa-angle-right"></i>首页</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>社区中心</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>关于我们</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>招商合作</a></li>
+                        </ul>   
+                        <script type="text/javascript">
+                            function method(){
+                                my$('toTop').click()
+                            }
+                        </script>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-sm-4 col-xs-4 footer-grids" style="padding: 0 2em 0 4em;">
+                    <ul>
+                        <li class="phn">Phone: 13202547840</li>
+                        <li class="email">Email: 1055409382@qq.com</li>
+                    </ul>
+                    <p>Copyright © 2019.Cwlojako</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- 底部栏结束 -->
+</body>
+
+</html>

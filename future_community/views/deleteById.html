@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="../public/favicon.ico">
+
+    <!-- Bootstrap layui core CSS -->
+    <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../public/css/dashboard.css" rel="stylesheet">
+    <style type="text/css">
+      .null{
+        border-color: red;
+        box-shadow: rgba(255,0,0,0.5) 5px 2px 8px 0px;
+        transition: all 0.5s;
+      }
+    </style>
+  </head>
+
+  <body>
+      <div class="col-sm-12 col-md-12 main">
+    <form action="./delete.html" method="post" name="delete">
+        <div class="form-group"><label for="id">ID</label><input type="text" class="form-control" name="id" id="id" placeholder="请输入您的报修单id"></div><button type="submit" class="btn btn-danger">撤销</button>
+    </form>
+</div>
+  </body>
+</html>
+<script type="text/javascript">
+  var form = document.forms.delete
+  var id = document.getElementById('id')
+  form.onsubmit = function(){
+      return isNull()
+  }
+  function isNull(){
+    if (form.id.value === "" ){
+          id.className = 'form-control null'
+          id.placeholder = "不能为空"
+          return false
+    }else{
+      return true
+    }
+  }
+</script>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>智慧家居</title>
+	<link rel="shortcut icon" href="../public/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../public/layui-src/dist/css/layui.css">
+	<script src="../public/jquery/jquery-3.2.1.js"></script>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.layui-form-label{
+			text-align:left;
+		}
+		.layui-input-block{
+			margin-left:0px;
+		}
+		#toTop {     
+	        text-decoration: none;
+	        position: fixed;
+	        bottom: 3%;
+	        right: 3%;
+	        overflow: hidden;
+	        width: 32px;
+	        height: 32px;
+	        text-indent: 9999px;
+	        background: url(../public/img/top.png) no-repeat 0px 0px;
+	        z-index: 99;
+	    }
+	</style>
+</head>
+<body>
+
+<!-- 回到顶部开始 -->
+    <a href="#" id="toTop" style="display: none;">
+        <span id="toTopHover" style="opacity: 0;"></span>
+        ToTop
+    </a>
+<!-- 回到顶部结束 -->
+
+<div style="background:url(../public/img/pd1.jpg) no-repeat;background-color:transparent;background-size:auto 581px;height:581px;background-position:center center;"></div>
+<div style="background:url(../public/img/pd2.jpg) no-repeat;background-color:transparent;background-size:auto 833px;height:833px;background-position:center center;position:relative;">
+	<div style="width:450px;height:450px;top:265px;left:calc(50% + 0px);position:absolute;box-shadow:0px 0px 40px 10px #eee">
+		<h3 style="text-align:center;font-size:22px;line-height:62px;">提交信息即可免费加入未来社区</h3>
+		<div style="width:90%;margin:0 auto;">
+			<form class="layui-form" action="">
+				<label class="layui-form-label">姓名:</label>
+				<div class="layui-form-item">
+					<div class="layui-input-block" style="margin-left:0px;">
+						<input type="text" name="name" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+				<label class="layui-form-label">电话:</label>
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="text" name="phone" required  lay-verify="required" placeholder="请输入电话" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+
+				<label class="layui-form-label">留言:</label>
+				<div class="layui-form-item layui-form-text">
+					<div class="layui-input-block">
+						<textarea name="desc" placeholder="请描述你的产品信息" class="layui-textarea"></textarea>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<button class="layui-btn layui-btn-fluid layui-btn-normal" type="submit" lay-submit lay-filter="formDemo" style="font-size:20px;">免费接入智能音响</button>
+					</div>
+				</div>
+				</form>
+			<script src="../public/layui-src/dist/layui.js"></script>
+			<script>
+			layui.use('form', function(){
+				var form = layui.form;
+
+				//监听提交
+				form.on('submit(formDemo)', function(data){
+					layer.msg(JSON.stringify(data.field));
+					return false;
+				});
+			});
+			</script>
+		</div>
+	</div>
+</div>
+<div style="background:url(../public/img/pd3.jpg) no-repeat;background-color:transparent;background-size:auto 275px;height:275px;background-position:center center;"></div>
+<div style="background:url(../public/img/pd4.jpg) no-repeat;background-color:transparent;background-size:auto 700px;height:700px;background-position:center center;"></div>
+<div style="background:url(../public/img/pd5.jpg) no-repeat;background-color:transparent;background-size:auto 812px;height:812px;background-position:center center;"></div>
+<div style="background:url(../public/img/pd6.jpg) no-repeat;background-color:transparent;background-size:auto 812px;height:812px;background-position:center center;"></div>
+<div style="background:url(../public/img/pd7.jpg) no-repeat;background-color:transparent;background-size:auto 812px;height:812px;background-position:center center;"></div>
+
+</body>
+</html>
+<script type="text/javascript">
+	window.onload = function(){
+		window.onscroll = function(){
+			//*******************回到顶部开始*******************
+		      var toTop = document.getElementById('toTop')
+		      if(document.documentElement.scrollTop>=550){
+		        toTop.style.display = 'block'
+		      }else{
+		        toTop.style.display = 'none'
+		      }
+		    //*******************回到顶部结束*******************
+		}
+
+		//*******************回到顶部开始*******************
+		    $('#toTop').click(function () {
+		        $('html,body').animate({scrollTop:0},1000);
+		    })
+		//*******************回到顶部结束*******************
+	}
+</script>

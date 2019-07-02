@@ -1,0 +1,68 @@
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/" style="padding:3px 15px;">
+        <img width="100px" src="/public/img/logo1.png" alt="">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        {{ if user }}  
+        <button class="btn btn-primary navbar-btn" data-method="detail">发起</button>
+        <script src="../../public/jquery/jquery-3.2.1.js"></script>
+        <script src="../../public/layui-src/dist/layui.js"></script>
+   
+        <script type="text/javascript">
+           layui.use('layer', function(){ 
+                var $ = layui.jquery, layer = layui.layer; 
+                var active = {
+                  detail: function(){   
+                    //示范一个公告层
+                    layer.open({
+                      type: 2
+                      ,title: false //不显示标题栏
+                      ,closeBtn: false
+                      ,area: ['800px','500px']
+                      ,shade: 0.8
+                      ,anim:4
+                      ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                      ,btn: ['返回']
+                      ,yes:function(index,layero){
+                        window.location.reload(); 
+                      }
+                      ,btnAlign: 'c'
+                      ,moveType: 0 //拖拽模式，0或者1
+                      ,content: '../topic/new'
+                    });
+                  }
+                };       
+                $('.navbar-btn').on('click', function(){
+                  var othis = $(this), method = othis.data('method')
+                  active[method] ? active[method].call(this, othis) : ''
+                })
+              })
+        </script>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img width="25" height="25" src="{{ user.avatar }}" alt=""> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-current-user" style="padding:0 10px;">
+              当前登录用户: <strong>{{ user.nickname }}</strong>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">个人主页&nbsp;<span class="layui-badge-dot"></span></a></li>
+            <li><a href="/settings/profile">设置</a></li>
+            <li><a href="/logout">退出</a></li>
+          </ul>
+        </li>
+        {{ else }}
+        <a class="btn btn-primary navbar-btn" href="/login">登录</a>
+        <a class="btn btn-success navbar-btn" href="/register">注册</a>
+        {{ /if }}
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>

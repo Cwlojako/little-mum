@@ -1,0 +1,85 @@
+{{extend './_layout/home.html'}}
+
+{{block 'title'}}{{'业主投诉'}}{{/block}}
+
+{{block 'head'}}
+<style type="text/css">
+  .layui-card-header{
+    text-align: center;
+    font-size:25px;
+  }
+  .media-object{
+    border-radius: 50%;
+  }
+  .col-md-2 h4{
+    text-align: center;
+  }
+  .col-md-2 li{
+    width:100%;
+    height: 120px;
+    text-align: center;
+    position: relative;
+  }
+  .col-md-2 li div{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -31px;
+    margin-left: -26px;
+  }
+  .layui-icon{
+    font-size: 50px;
+  }
+  .tips{
+    font-weight: 800;
+  }
+</style>
+{{/block}}
+
+{{block 'body'}}
+<div class="layui-card" style="height: 5000px;">
+      <div class="layui-card-header">投诉建议</div>
+        <div class="layui-card-body">
+          <div class="row">
+            <ul class="media-list col-md-8 col-sm-8 col-md-offset-1 col-sm-offset-1">
+              {{ each topic }}
+              <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img width="50" height="50" class="media-object" src="{{ $value.avatar }}" alt="...">
+                    </a>   
+                </div>
+                <div class="media-body">
+                  <h3 class="media-heading">{{ $value.nickname }}</h3>
+                  <p>{{ $value.content }}</p>
+                </div>
+              </li>
+              {{ /each }}
+            </ul>
+            <ul class="col-md-2 col-sm-2">
+                <h4>投诉流程</h4>
+                <li>
+                  <div>
+                    <span class="layui-icon layui-icon-username" style="color:orange;"></span>
+                    <p class="tips">用户登录</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="layui-icon layui-icon-release" style="color:#337ab7;"></span>
+                    <p class="tips">发起投诉</p>
+                  </div>
+                </li>           
+                <li>
+                  <div>
+                    <span class="layui-icon layui-icon-ok-circle" style="color:green;"></span>
+                    <p class="tips">完成投诉</p>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+{{/block}}
+

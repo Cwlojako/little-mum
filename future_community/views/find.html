@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="../public/favicon.ico">
+
+    <!-- Bootstrap layui core CSS -->
+    <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../public/css/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+      <div class="col-sm-12 col-md-12 main">
+          <form>
+              <div class="form-group">
+                <input type="hidden" name="id" id="id" value="{{repair._id}}">
+              </div>
+              <div class="form-group">
+                <label for="name">名字</label>
+                <input type="text" class="form-control" name="name" id="name" value="{{repair.name}}" disabled>
+              </div>
+              <div class="form-group">
+                <label for="type">类型</label>
+                <input type="text" class="form-control" name="type" id="type" value="{{repair.type}}" disabled>
+              </div>
+              <div class="form-group">
+                <label for="detail">具体情况</label>
+                <input type="text" class="form-control" name="detail" id="detail" value="{{repair.detail}}" disabled>
+              </div>
+              <div class="form-group">
+                <label for="address">地址</label>
+                <input type="text" class="form-control" name="address" id="address" value="{{repair.address}}" disabled>
+              </div>
+              <div class="form-group">
+                <label for="houseNumber">门牌号</label>
+                <input type="text" class="form-control" name="houseNumber" id="houseNumber" value="{{repair.houseNumber}}" disabled>
+              </div>
+          </form>
+      </div>
+  </body>
+</html>

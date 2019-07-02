@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FirstDemo</title>
+</head>
+<link href="../public/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<body>
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li class="disabled">
+      <span>
+        <span aria-hidden="true">&laquo;</span>
+      </span>
+    </li>
+    <li class="active">
+      <span>1 <span class="sr-only">(current)</span></span>
+    </li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li class="disabled">
+      <span>
+        <span aria-hidden="true">&raquo;</span>
+      </span>
+    </li>
+  </ul>
+  
+</nav>
+	
+</body>
+</html>
+<script type="text/javascript">
+	var info = document.getElementsByClassName('numInfo')
+	console.log(info)
+	for(let i=0;i<info.length;i++){
+		info[i].onclick = function(){
+			console.log(i)
+			info[i].className = "numInfo active"
+		}
+	}
+</script>

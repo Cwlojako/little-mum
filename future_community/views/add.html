@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="../public/favicon.ico">
+
+    <!-- Bootstrap layui core CSS -->
+    <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../public/css/dashboard.css" rel="stylesheet">
+    <style type="text/css">
+      .null{
+        border-color: red;
+        box-shadow: rgba(255,0,0,0.5) 5px 2px 8px 0px;
+        transition: all 0.5s;
+      }
+    </style>
+  </head>
+
+  <body>
+      <div class="col-sm-12 col-md-12 main">
+          <form action="./add.html" method="post" name="add">
+              <div class="form-group">
+                <label for="name">名字</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="请输入您的名字或简称">
+              </div>
+              <div class="form-group">
+                <label for="type">类型</label>
+                <select class="form-control" id="type" name="type">
+                  <option>水</option>
+                  <option>电</option>
+                  <option>电器</option>
+                  <option>木具</option>
+                  <option>墙壁</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="detail">具体情况</label>
+                <input type="text" class="form-control" name="detail" id="detail" placeholder="请阐述您需要维修的具体情况">
+              </div>
+              <div class="form-group">
+                <label for="address">地址</label>
+                <select class="form-control" id="address" name="address">
+                  <option>江南新城</option>
+                  <option>碧桂园</option>
+                  <option>水岸花城</option>
+                  <option>华泰别墅</option>
+                  <option>东方首府</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="houseNumber">门牌号</label>
+                <input type="text" class="form-control" name="houseNumber" id="houseNumber" placeholder="请输入您住址社区门牌号">
+              </div>
+              <button type="submit" class="btn btn-success">提交</button>
+          </form> 
+      </div>
+  </body>
+</html>
+<script type="text/javascript">
+    var n = document.getElementById('name')
+    var detail = document.getElementById('detail')
+    var houseNumber = document.getElementById('houseNumber')
+    var form = document.forms.add
+    
+    form.onsubmit = function(){
+      return isNull()
+    }
+    function isNull() {
+      if (form.name.value === "" ){
+          n.className = 'form-control null'
+          n.placeholder = "不能为空"
+          return false
+      }else if(form.detail.value === "" ){
+          detail.className = 'form-control null'
+          detail.placeholder = "不能为空"
+          return false
+      }else if(form.houseNumber.value === ""){
+          houseNumber.className = 'form-control null'
+          houseNumber.placeholder = "不能为空"
+          return false
+      } 
+      else{
+          return true
+      }
+    }
+
+    n.onblur = function(){
+      n.className = 'form-control'
+    }
+    detail.onblur = function(){
+      detail.className = 'form-control'
+    }
+    houseNumber.onblur = function(){
+      houseNumber.className = 'form-control'
+    }
+  </script>

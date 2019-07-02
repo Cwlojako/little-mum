@@ -1,0 +1,38 @@
+{
+	"repair": [{
+		"id": 10001,
+		"name": "路飞",
+		"type": "木具",
+		"detail": "地板开裂",
+		"address": "水岸花城",
+		"houseNumber": "17栋502"
+	}, {
+		"id": 10002,
+		"name": "索隆",
+		"type": "木具",
+		"detail": "地板开裂",
+		"address": "水岸花城",
+		"houseNumber": "17栋502"
+	}, {
+		"id": 10003,
+		"name": "山治",
+		"type": "木具",
+		"detail": "地板开裂",
+		"address": "明珠帝苑",
+		"houseNumber": "17栋502"
+	}, {
+		"id": 10004,
+		"name": "娜美",
+		"type": "木具",
+		"detail": "地板开裂",
+		"address": "碧桂园",
+		"houseNumber": "17栋502"
+	}, {
+		"id": 10005,
+		"name": "卡塔库栗",
+		"type": "木具",
+		"detail": "地板开裂",
+		"address": "碧桂园",
+		"houseNumber": "17栋502"
+	}]
+}
