@@ -16,18 +16,18 @@
 ![avatar](/future_community/public/img/预览2.png)
 
 # 3.报修系统页面(具有增查删的功能)
-![avatar](/future_community/public/img/预览3.png)
+![avatar](/future_community/public/img/预览3.PNG)
 
 # 4.报修单添加弹框
-![avatar](/future_community/public/img/预览4.png)
+![avatar](/future_community/public/img/预览4.PNG)
 
 # 5.报修单查询弹框
-![avatar](/future_community/public/img/预览5.png)
+![avatar](/future_community/public/img/预览5.PNG)
 
 # 6.业主投诉登录注册页面
-![avatar](/future_community/public/img/预览6.png)
-![avatar](/future_community/public/img/预览9.png)
+![avatar](/future_community/public/img/预览6.PNG)
+![avatar](/future_community/public/img/预览9.PNG)
 
 # 7.业主投诉页面(类似博客评论系统)
-![avatar](/future_community/public/img/预览7.png)
-![avatar](/future_community/public/img/预览10.png)
+![avatar](/future_community/public/img/预览7.PNG)
+![avatar](/future_community/public/img/预览10.PNG)
