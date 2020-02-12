@@ -7,7 +7,7 @@
 	##### 2.2 在mongodb安装根硬盘下创建一个新目录data/db。（例如我这里安装在C盘，则根硬盘就是C盘，那么是C：/data/db）
 	##### 2.3 打开cmd输入mongod开启服务
 #### 3.运行项目
-	##### 在项目目录下右键用PowerShell打开，输入nodemon ./app.js运行项目，即可在localhost:3000访问网站
+	##### 在项目目录下右键用PowerShell打开，输入node ./app.js运行项目，即可在localhost:3000访问网站
 
 # 1.主页面
 ![avatar](/future_community/public/img/预览1.png)
